@@ -17,5 +17,11 @@ print(f'\nBefore transpose:\n{b}')
 # transpose:
 
 c = np.moveaxis(b.T, -1, 0)
+c_ravel = c.ravel().astype(np.int)
 
 print(f'\nAfter transpose:\n{c}')
+
+np.savetxt("c_ravel.txt", c_ravel)
+
+d = np.loadtxt("c_ravel.txt").astype(int).reshape(-1,a.shape[0], a.shape[1])
+print(f'\nAfter save and reload: \n{d}')
