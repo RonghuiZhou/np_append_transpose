@@ -14,12 +14,13 @@ b = np.append(a,a.T).reshape(-1,a.shape[0], a.shape[1])
 
 print(f'\nBefore transpose:\n{b}')
 
-# transpose:
+print(f'\nDirect transpose:\n{b.T}')
 
+# transpose:
 c = np.moveaxis(b.T, -1, 0)
 c_ravel = c.ravel().astype(np.int)
 
-print(f'\nAfter transpose:\n{c}')
+print(f'\nAfter transpose and move axis:\n{c}')
 
 np.savetxt("c_ravel.txt", c_ravel)
 
