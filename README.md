@@ -5,11 +5,11 @@ To transpose the 2d arrays inside a 3d array
 
 """
 
-<img src="tranpose.PNG"
+<img src="transpose.PNG"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
 
-![A test image](tranpose.PNG)
+![A test image](transpose.PNG)
 
 Before transpose:
 [[[1 2 3]
