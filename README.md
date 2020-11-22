@@ -5,7 +5,7 @@ To transpose the 2d arrays inside a 3d array
 
 """
 
-![A test image](tranpose.png)
+![A test image](tranpose.PNG)
 
 Before transpose:
 [[[1 2 3]
